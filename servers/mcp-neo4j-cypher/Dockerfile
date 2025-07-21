@@ -32,4 +32,4 @@ ENV NEO4J_MCP_SERVER_PATH="/api/mcp/"
 EXPOSE 8000
 
 # Command to run the server using the package entry point
-CMD ["mcp-neo4j-cypher", "--transport", "http", "--host", "0.0.0.0", "--port", "8000", "--path", "/api/mcp/"]
+CMD ["mcp-neo4j-cypher", "--transport", "http", "--server-host", "0.0.0.0", "--server-port", "8000", "--server-path", "/api/mcp/"]
